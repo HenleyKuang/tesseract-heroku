@@ -1,0 +1,11 @@
+{
+  "name": "book-quotes",
+  "version": "0.0.1",
+  "description": "Take notes and have them randomly sent to you each day.",
+  "engines": {
+    "iojs": "1.0.x"
+  },
+  "dependencies": {
+    "express": "^4.11.2"
+  }
+}
