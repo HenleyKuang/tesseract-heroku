@@ -1,5 +1,6 @@
 var loginCtrl = require('./controllers/login');
 var homeCtrl  = require('./controllers/home');
+var exerptCtrl = require('./controllers/exerpt');
 var config    = require('../config.js');
 
 module.exports = {
@@ -8,5 +9,8 @@ module.exports = {
     },
     toLogin: function(req, res){
         loginCtrl(req, res, config);
+    },
+    toExerpt: function(req, res){
+        exerptCtrl(req, res, config);
     }
 };

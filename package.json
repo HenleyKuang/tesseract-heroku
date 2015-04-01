@@ -1,7 +1,7 @@
 {
-  "name": "book-quotes",
+  "name": "quollect",
   "version": "0.0.1",
-  "description": "Take notes and have them randomly sent to you each day.",
+  "description": "Store quotes and notes and have them randomly sent to you each day.",
   "engines": {
     "iojs": "1.0.x"
   },
