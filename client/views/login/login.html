@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title>Book Quotes Login</title>
+  <title>Login</title>
 
   <!-- bower:css -->
   <link rel="stylesheet" href="../../../bower_components/bootstrap/dist/css/bootstrap.css" />
@@ -11,13 +11,29 @@
   <script src="../../../bower_components/jquery/dist/jquery.js"></script>
   <script src="../../../bower_components/bootstrap/dist/js/bootstrap.js"></script>
   <!-- endbower -->
+
   <link rel="stylesheet" src="/styles/main.css" />
 </head>
   <body>
-      <form>
-          <input type="text" placeholder="Username" />
-          <input type="password" placeholder="Password" />
-          <button type="submit">Log In</button>
-      </form>
+      <div class="container">
+          <div class="row-fluid">
+                <form>
+                    <div class="form-group">
+                        <label for="usernameInput">Username</label>
+                        <input type="username" class="form-control" id="usernameInput" placeholder="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="passwordInput">Password</label>
+                        <input type="password" class="form-control" id="passwordInput" placeholder="password">
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Remember me
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Log in</button>
+                </form>
+          </div>
+      </div>
   </body>
 </html>

@@ -1,11 +1,9 @@
 var gulp = require('gulp');
 var wiredep = require('wiredep').stream;
+var config = require('./config.js');
 
 gulp.task('bower', function () {
-  gulp.src('./client/views/*/*.html')
-    .pipe(wiredep({
-      optional: 'configuration',
-      goes: 'here'
-    }))
-    .pipe(gulp.dest('./client/views/'));
+  gulp.src(config.paths.views + '/*/*.html')
+    .pipe(wiredep())
+    .pipe(gulp.dest(config.paths.views));
 });
