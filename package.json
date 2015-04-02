@@ -1,7 +1,7 @@
 {
   "name": "quollect",
   "version": "0.0.1",
-  "repository"{
+  "repository": {
       "type" : "git",
       "url" : "http://github.com/BrandonClapp/quollect.git"
   },
