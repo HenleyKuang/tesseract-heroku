@@ -5,6 +5,9 @@
   "engines": {
     "iojs": "1.0.x"
   },
+  "scripts": {
+      "postinstall": "bower install && gulp bower"
+  }
   "dependencies": {
     "express": "^4.11.2",
     "wiredep": "^2.2.2"
