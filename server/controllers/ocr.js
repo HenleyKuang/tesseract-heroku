@@ -7,7 +7,7 @@ var tesseract = require('node-tesseract');
 module.exports = function(req, res, config){
     console.log('sampleImage: ', config.sampleImage);
 
-    tesseract.process(config.sampleImage, function(err, text) {
+    tesseract.process(config.ocr.sampleImage, config.ocr.options, function(err, text) {
         if(err) {
             console.error(err);
         } else {

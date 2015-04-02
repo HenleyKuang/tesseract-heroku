@@ -8,5 +8,11 @@ module.exports = {
         bower: __dirname + '/bower_components'
     },
 
-    sampleImage: __dirname + '/sample/quote.jpg'
+    ocr: {
+        sampleImage: __dirname + '/sample/quote.jpg',
+        options: {
+            bin: '/vendor/tesseract-ocr/bin/tesseract'
+        }
+    }
+
 };
