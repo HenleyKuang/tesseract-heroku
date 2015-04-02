@@ -19,7 +19,7 @@ app.get('/login', function(req, res) {
 });
 
 app.post('/exerpt', function(req, res){
-    route.toExerpt(req, res);
+    route.toExcerpt(req, res);
 });
 
 app.get('/ocr', function(req, res){

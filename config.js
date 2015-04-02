@@ -6,5 +6,7 @@ module.exports = {
         styles: __dirname + '/client/styles',
         images: __dirname + '/client/images',
         bower: __dirname + '/bower_components'
-    }
+    },
+
+    sampleImage: __dirname + '/sample/quote.jpg'
 };
