@@ -2,8 +2,8 @@
   "name": "quollect",
   "version": "0.0.1",
   "repository": {
-      "type" : "git",
-      "url" : "http://github.com/BrandonClapp/quollect.git"
+    "type": "git",
+    "url": "http://github.com/BrandonClapp/quollect.git"
   },
   "scripts": {
     "postinstall": "bower install"
@@ -15,6 +15,7 @@
   "dependencies": {
     "bower": "^1.4.1",
     "express": "^4.11.2",
+    "node-tesseract": "^0.2.6",
     "wiredep": "^2.2.2"
   },
   "devDependencies": {
