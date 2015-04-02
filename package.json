@@ -6,6 +6,10 @@
     "iojs": "1.0.x"
   },
   "dependencies": {
-    "express": "^4.11.2"
+    "express": "^4.11.2",
+    "wiredep": "^2.2.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.11"
   }
 }

@@ -4,6 +4,7 @@ var config  = require('./config.js');
 
 var app = express();
 
+app.use('/bower_components',  express.static(config.paths.bower));
 app.use("/styles", express.static(config.paths.styles));
 app.use("/scripts", express.static(config.paths.scripts));
 app.use("/images", express.static(config.paths.images));

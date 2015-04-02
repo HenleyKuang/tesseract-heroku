@@ -1,1 +1,11 @@
-/* Automated tasks here */
+var gulp = require('gulp');
+var wiredep = require('wiredep').stream;
+
+gulp.task('bower', function () {
+  gulp.src('./client/views/*/*.html')
+    .pipe(wiredep({
+      optional: 'configuration',
+      goes: 'here'
+    }))
+    .pipe(gulp.dest('./client/views/'));
+});
