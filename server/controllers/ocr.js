@@ -7,11 +7,13 @@ var tesseract = require('node-tesseract');
 module.exports = function(req, res, config){
     console.log('sampleImage: ', config.sampleImage);
 
-    tesseract.process(__dirname + '/../sample/quote.jpg',function(err, text) {
+    tesseract.process(config.sampleImage, function(err, text) {
         if(err) {
             console.error(err);
         } else {
             console.log(text);
         }
+
+        res.send((err || null) + ' ' + (text || null));
     });
 };
