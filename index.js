@@ -22,6 +22,10 @@ app.post('/exerpt', function(req, res){
     route.toExerpt(req, res);
 });
 
+app.get('/ocr', function(req, res){
+    route.toOcr(req, res);
+});
+
 var server = app.listen(process.env.PORT || 3000, function() {
     var host = server.address().address;
     var port = server.address().port;

@@ -1,6 +1,7 @@
 var loginCtrl = require('./controllers/login');
 var homeCtrl  = require('./controllers/home');
 var exerptCtrl = require('./controllers/exerpt');
+var ocrCtrl = require('./controllers/ocr');
 var config    = require('../config.js');
 
 module.exports = {
@@ -12,5 +13,8 @@ module.exports = {
     },
     toExerpt: function(req, res){
         exerptCtrl(req, res, config);
+    },
+    toOcr: function(req, res){
+        ocrCtrl(req, res, config);
     }
 };
