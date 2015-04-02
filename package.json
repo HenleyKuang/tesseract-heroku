@@ -6,8 +6,9 @@
     "iojs": "1.0.x"
   },
   "scripts": {
-      "postinstall": "bower install && gulp bower"
-  },
+    "start": "node index.js",
+    "postinstall": "bower install"
+    },
   "dependencies": {
     "express": "^4.11.2",
     "wiredep": "^2.2.2"
