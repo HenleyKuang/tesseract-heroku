@@ -1,2 +1,4 @@
-# Book Quotes
-Record parts that you would otherwise highlight. Have those excerpts sent throughout the day via text or email.
+Work in progress/side project. See the OCR functionality [here](http://quollect.herokuapp.com)
+
+
+MIT
