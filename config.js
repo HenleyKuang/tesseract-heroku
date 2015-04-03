@@ -9,7 +9,7 @@ module.exports = {
     },
 
     ocr: {
-        sampleImage: __dirname + '/sample/quote3.jpg',
+        sampleImage: __dirname + '/sample/quote4.png',
         options: {
             bin: '/vendor/tesseract-ocr/bin/tesseract'
         }
