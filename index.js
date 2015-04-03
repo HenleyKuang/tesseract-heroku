@@ -1,8 +1,31 @@
 var express = require('express');
 var route   = require('./server/router.js');
 var config  = require('./config.js');
+var bodyParser = require('body-parser');
+var multer = require('multer');
 
 var app = express();
+
+app.use(bodyParser.json());       // to support JSON-encoded bodies
+app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
+  extended: true
+}));
+
+app.use(multer({
+    dest: './uploads/',
+    rename: function (fieldname, filename) {
+        return filename.replace(/\W+/g, '-').toLowerCase() + Date.now();
+    },
+    onFileUploadStart: function (file) {
+        console.log(file.fieldname + ' is starting ...');
+    },
+    onFileUploadData: function (file, data) {
+        console.log(data.length + ' of ' + file.fieldname + ' arrived');
+    },
+    onFileUploadComplete: function (file) {
+        console.log(file.fieldname + ' uploaded to  ' + file.path);
+    }
+}));
 
 app.use('/bower_components',  express.static(config.paths.bower));
 app.use("/styles", express.static(config.paths.styles));
@@ -22,7 +45,7 @@ app.post('/exerpt', function(req, res){
     route.toExcerpt(req, res);
 });
 
-app.get('/ocr', function(req, res){
+app.post('/ocr', function(req, res){
     route.toOcr(req, res);
 });
 

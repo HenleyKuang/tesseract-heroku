@@ -13,8 +13,11 @@
     "iojs": "1.0.x"
   },
   "dependencies": {
+    "body-parser": "^1.12.2",
     "bower": "^1.4.1",
     "express": "^4.11.2",
+    "fs": "0.0.2",
+    "multer": "^0.1.8",
     "node-tesseract": "^0.2.6",
     "wiredep": "^2.2.2"
   },
